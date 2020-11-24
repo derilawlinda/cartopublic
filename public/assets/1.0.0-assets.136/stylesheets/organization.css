@@ -1,0 +1,964 @@
+ul.tagit {
+  margin-right: inherit;
+  margin-left: inherit;
+  /* usually we don't want the regular ul margins. */
+  padding: 1px 5px;
+  overflow: auto; }
+
+ul.tagit li {
+  display: block;
+  margin: 2px 5px 2px 0;
+  float: left; }
+
+ul.tagit li.tagit-choice {
+  position: relative;
+  padding: 0.2em 18px 0.2em 0.5em;
+  line-height: inherit; }
+
+ul.tagit li.tagit-new {
+  padding: 0.25em 4px 0.25em 0; }
+
+ul.tagit li.tagit-choice a.tagit-label {
+  text-decoration: none;
+  cursor: pointer; }
+
+ul.tagit li.tagit-choice .tagit-close {
+  position: absolute;
+  top: 50%;
+  right: 0.1em;
+  margin-top: -8px;
+  cursor: pointer; }
+
+/* used for some custom themes that don't need image icons */
+ul.tagit li.tagit-choice .tagit-close .text-icon {
+  display: none; }
+
+ul.tagit li.tagit-choice input {
+  display: block;
+  margin: 2px 5px 2px 0;
+  float: left; }
+
+ul.tagit input[type="text"] {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: inherit; }
+
+.IconActions {
+  height: 17px; }
+
+.IconPicker {
+  margin-bottom: 20px; }
+
+.IconList {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  margin: 0 -12px 0 0; }
+
+.IconList-item {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  min-width: 88px;
+  height: 56px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  background: white; }
+  .IconList-item:last-child {
+    margin-right: 0; }
+  .IconList-item:hover {
+    border: 1px solid #AAA;
+    cursor: pointer; }
+
+.IconList-item--small {
+  width: 40px;
+  min-width: 40px;
+  height: 40px; }
+
+.IconList-item--dashed {
+  border-style: dashed; }
+  .IconList-item--dashed:hover {
+    border: 1px dashed #AAA; }
+
+.IconList-item.is-selected {
+  border: 1px solid #1181FB; }
+
+.IconItem-icon {
+  vertical-align: middle; }
+
+.IconText.is--critical {
+  color: #FF6C6C; }
+
+.is-hidden {
+  display: none; }
+
+.IconModal {
+  padding: 0 !important; }
+
+.InviteUsers {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%; }
+
+.InviteUsers-form {
+  width: 800px; }
+
+.InviteUsers-formContent,
+.InviteUsers-formFooter {
+  width: 800px;
+  margin: 0 auto; }
+
+.InviteUsers-formContent {
+  position: relative;
+  padding: 28px 0 120px; }
+
+.InviteUsers-formFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 800px;
+  border-top: 1px solid #dddddd;
+  background: #f9f9f9; }
+
+.Form-rowData.InviteUsers-userType {
+  justify-content: flex-start; }
+  .Form-rowData.InviteUsers-userType .Form-label {
+    margin-left: 10px; }
+
+.InviteUsers-formFooterSticky {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 97px;
+  background-color: #f9f9f9; }
+
+.InviteUsers .Form-rowInfoText--error {
+  width: 140px; }
+
+/* FONT FACE */
+.OrganizationUser-stats {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 940px;
+  padding: 30px 0;
+  border-bottom: 1px solid #dddddd; }
+
+.OrganizationUser-stat {
+  width: 120px;
+  text-align: center; }
+
+.OrganizationUser-statIcon {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  line-height: 40px;
+  text-align: center; }
+
+.OrganizationUser-statInfo {
+  display: block;
+  padding: 10px 0 0;
+  text-align: center; }
+
+.OrganizationUser-statTitle {
+  display: block;
+  color: #333333;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500; }
+
+.OrganizationUser-statLabel {
+  color: #999999;
+  font-size: 13px; }
+
+.OrganizationUser-statIcon {
+  color: #D1D1D1;
+  font-size: 18px; }
+
+.CDB-IconFont-eye.OrganizationUser-statIcon {
+  font-size: 24px;
+  line-height: 29px; }
+
+.CDB-IconFont-marker.OrganizationUser-statIcon {
+  font-size: 22px; }
+
+.CDB-IconFont-progressBar.OrganizationUser-statIcon {
+  font-size: 24px;
+  line-height: 24px; }
+
+.CDB-IconFont-twitter.OrganizationUser-statIcon {
+  font-size: 22px;
+  line-height: 32px; }
+
+/* FONT FACE */
+/**
+  *  Progress element styles
+  *
+  *  It needs:
+  *  - Height of the progress "bar".
+  *  - Border radius of the element.
+  *  - If it needs a white gradient over it.
+  *  - If bars needs a min width.
+  *
+  */
+/* FONT FACE */
+.OrganizationUser-quota {
+  display: flex; }
+
+.OrganizationUser-quotaProgress {
+  display: block;
+  width: 300px; }
+  .OrganizationUser-quotaProgress div.progress-bar {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 10px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #F5F5F5; }
+    .OrganizationUser-quotaProgress div.progress-bar.overflow-visible {
+      overflow: visible; }
+    .OrganizationUser-quotaProgress div.progress-bar .bar-3,
+    .OrganizationUser-quotaProgress div.progress-bar .bar-2,
+    .OrganizationUser-quotaProgress div.progress-bar .bar-1,
+    .OrganizationUser-quotaProgress div.progress-bar .bar-0 {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      border-radius: 20px;
+      min-width: 3px; }
+    .OrganizationUser-quotaProgress div.progress-bar .bar-3 {
+      z-index: 3;
+      border-right: 1px solid #FFF;
+      background: #7DD4FF; }
+    .OrganizationUser-quotaProgress div.progress-bar .bar-2 {
+      z-index: 2;
+      background: #0090D7; }
+    .OrganizationUser-quotaProgress div.progress-bar .bar-1 {
+      z-index: 1;
+      background: #E5E5E5; }
+      .OrganizationUser-quotaProgress div.progress-bar .bar-1::after {
+        display: none; }
+      .OrganizationUser-quotaProgress div.progress-bar .bar-1::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: auto;
+        border-right: 1px solid white; }
+    .OrganizationUser-quotaProgress div.progress-bar .bar-0 {
+      background: url("/assets/1.0.0-assets.136/images/layout/unassigned_bkg.png") repeat-x left 0;
+      z-index: 0; }
+      .OrganizationUser-quotaProgress div.progress-bar .bar-0::after {
+        display: none; }
+    .OrganizationUser-quotaProgress div.progress-bar .danger {
+      background: #f15743; }
+    .OrganizationUser-quotaProgress div.progress-bar .caution {
+      background: #f8b85c; }
+
+.OrganizationUser-quotaBar {
+  display: block;
+  width: 300px;
+  overflow: visible; }
+
+.OrganizationUser-quotaLegend {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0; }
+
+.OrganizationUser-quotaLegendItem {
+  margin: 0 12px 0 0;
+  color: #999999;
+  font-size: 13px; }
+
+.OrganizationUser-quotaLegendIcon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 4px;
+  border-radius: 10px;
+  background: #F5F5F5;
+  box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 0.25); }
+
+.OrganizationUser-quotaLegendIcon--assigned {
+  background: #1181FB; }
+
+.OrganizationUser-quotaLegendIcon--used {
+  background: #71CEFB; }
+
+.OrganizationUser-quotaInfo {
+  display: inline-block;
+  color: #999999;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 13px; }
+
+.OrganizationUser-quotaInfoInput {
+  box-sizing: border-box;
+  width: 70px !important;
+  height: 32px;
+  padding: 0 5px;
+  text-align: right; }
+
+.OrganizationUser-quotaInfoLink {
+  color: #3aa9e3; }
+  .OrganizationUser-quotaInfoLink:hover {
+    color: #227dbd;
+    text-decoration: underline; }
+
+.UserQuotaDropdown {
+  width: 220px;
+  padding: 20px; }
+
+.UserQuotaDropdown-title {
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  color: #333333;
+  font-size: 15px; }
+
+.UserQuotaDropdown-info {
+  display: block;
+  margin-top: 15px;
+  color: #999999;
+  font-size: 13px; }
+
+.UserQuotaDropdown-slider {
+  width: 220px;
+  margin-top: 12px; }
+
+/* FONT FACE */
+.OrganizationSearch {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -16px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+.OrganizationSearch-Form {
+  position: relative; }
+
+.OrganizationSearch-Item {
+  line-height: 30px; }
+  .OrganizationSearch-Item.RoleCount {
+    color: #979EA1;
+    white-space: nowrap; }
+
+.OrganizationSearch-FormButton {
+  padding-right: 2px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #333333;
+  font-size: 14px; }
+  .OrganizationSearch-FormButton::after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    left: 20px;
+    width: 1px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.06);
+    vertical-align: text-bottom; }
+  .OrganizationSearch-FormButton > i {
+    display: inline;
+    margin-right: 10px;
+    margin-left: 1px;
+    font-weight: bold;
+    vertical-align: middle; }
+
+.OrganizationSearch-FormButton--clean {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -12px;
+  border-radius: 100%;
+  outline: none;
+  background: transparent;
+  color: #bbbbbb;
+  text-align: center; }
+  .OrganizationSearch-FormButton--clean:hover {
+    color: #888888; }
+
+.OrganizationSearch-FormInput {
+  width: 220px;
+  padding-left: 5px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 15px;
+  font-weight: 300; }
+  .OrganizationSearch-FormInput::-webkit-input-placeholder {
+    color: #DDD;
+    font-style: italic;
+    font-weight: 500; }
+  .OrganizationSearch-FormInput::-moz-placeholder {
+    color: #DDD;
+    font-style: italic;
+    font-weight: 500; }
+  .OrganizationSearch-FormInput:-ms-placeholder {
+    color: #DDD;
+    font-style: italic;
+    font-weight: 500; }
+
+/* FONT FACE */
+/**
+  *  Progress element styles
+  *
+  *  It needs:
+  *  - Height of the progress "bar".
+  *  - Border radius of the element.
+  *  - If it needs a white gradient over it.
+  *  - If bars needs a min width.
+  *
+  */
+/* FONT FACE */
+.OrganizationList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 1px;
+  padding-bottom: 30px; }
+
+.OrganizationList--centered {
+  align-items: center;
+  justify-content: center;
+  min-height: 300px; }
+
+.OrganizationList-user {
+  position: relative;
+  width: 100%;
+  padding: 0 19px;
+  border: 1px transparent solid;
+  border-radius: 4px; }
+  .OrganizationList-user:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06); }
+
+.OrganizationList-user.is-selectable:hover {
+  border-color: #bcd8f1;
+  background-color: #f5fafe; }
+
+.OrganizationList-user.is-selected {
+  border-color: #9dc2e0;
+  background-color: #eff6fc; }
+  .OrganizationList-user.is-selected:hover {
+    border-color: #9dc2e0;
+    background-color: #eff6fc; }
+
+.OrganizationList-userAvatar {
+  width: 42px;
+  height: 42px;
+  margin-right: 20px; }
+
+.OrganizationList-userAvatar--img {
+  border: 0; }
+
+.OrganizationList-userLink {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 20px 0;
+  text-decoration: none !important; }
+
+.OrganizationList-userInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%; }
+
+.OrganizationList-userInfoName {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-between;
+  max-width: 350px;
+  height: 40px;
+  padding: 1px 0; }
+
+.OrganizationList-userInfoSubtitle {
+  color: #999999;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px; }
+
+.OrganizationList-userInfoData {
+  display: flex;
+  flex-direction: row; }
+  .OrganizationList-userInfoData--paragraph-icon {
+    margin-right: 4px; }
+
+.OrganizationList-userStats {
+  width: 200px;
+  margin-top: 10px; }
+  .OrganizationList-userStats div.progress-bar {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 6px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #F5F5F5; }
+    .OrganizationList-userStats div.progress-bar.overflow-visible {
+      overflow: visible; }
+    .OrganizationList-userStats div.progress-bar .bar-3,
+    .OrganizationList-userStats div.progress-bar .bar-2,
+    .OrganizationList-userStats div.progress-bar .bar-1,
+    .OrganizationList-userStats div.progress-bar .bar-0 {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      border-radius: 20px;
+      min-width: 4px; }
+    .OrganizationList-userStats div.progress-bar .bar-3 {
+      z-index: 3;
+      border-right: 1px solid #FFF;
+      background: #7DD4FF; }
+    .OrganizationList-userStats div.progress-bar .bar-2 {
+      z-index: 2;
+      background: #0090D7; }
+    .OrganizationList-userStats div.progress-bar .bar-1 {
+      z-index: 1;
+      background: #E5E5E5; }
+      .OrganizationList-userStats div.progress-bar .bar-1::after {
+        display: none; }
+      .OrganizationList-userStats div.progress-bar .bar-1::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: auto;
+        border-right: 1px solid white; }
+    .OrganizationList-userStats div.progress-bar .bar-0 {
+      background: url("/assets/1.0.0-assets.136/images/layout/unassigned_bkg.png") repeat-x left 0;
+      z-index: 0; }
+      .OrganizationList-userStats div.progress-bar .bar-0::after {
+        display: none; }
+    .OrganizationList-userStats div.progress-bar .danger {
+      background: #f15743; }
+    .OrganizationList-userStats div.progress-bar .caution {
+      background: #f8b85c; }
+
+.OrganizationList-userLink:hover {
+  cursor: pointer; }
+  .OrganizationList-userLink:hover:not(.is-disabled) .OrganizationList-userInfoName {
+    color: #227dbd; }
+
+.OrganizationList-userLink.is-disabled {
+  opacity: 0.5;
+  cursor: initial; }
+
+.OrganizationList-paginator {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px 0; }
+
+.AssetsList-recent {
+  overflow: hidden; }
+
+.AssetsList-recentInner {
+  display: flex;
+  width: 1000px; }
+
+.AssetsList {
+  display: flex;
+  position: relative; }
+
+.AssetListItem.Carousel-item {
+  width: 40px;
+  min-width: 40px;
+  height: 40px; }
+
+.AssetsList-inner {
+  display: block;
+  position: relative;
+  height: auto;
+  max-height: none;
+  margin: 35px 0 70px;
+  padding: 0 0 0 5px;
+  overflow: auto; }
+
+.AssetItem-button {
+  width: 100%;
+  height: 100%; }
+
+.AssetItem-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%; }
+
+.AssetItem-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%; }
+
+.Modal-inner .AssetsList {
+  flex-wrap: wrap;
+  margin: 0 -14px 20px; }
+
+.Modal-inner .AssetsList:last-child {
+  flex-wrap: wrap;
+  margin: 0 -14px; }
+
+.AssetsList-item {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  min-width: 88px;
+  height: 56px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(46, 60, 67, 0.08);
+  border-radius: 4px;
+  background: #F9F9F9; }
+  .AssetsList-item:last-child {
+    margin-right: 0; }
+  .AssetsList-item:hover {
+    border: 1px solid #DDD;
+    cursor: pointer; }
+
+.AssetsList-item.AssetsList-item--text {
+  border: 1px dotted #DDD; }
+  .AssetsList-item.AssetsList-item--text:hover {
+    border: 1px solid #DDD;
+    cursor: pointer; }
+
+.AssetsList-item.AssetsList-item--text.is-selected {
+  border: 1px solid rgba(46, 60, 67, 0.08); }
+
+.AssetsList-item.is-selected {
+  border: 2px solid #1785FB; }
+
+.AssetsList-item--small {
+  width: 40px;
+  min-width: 40px;
+  height: 40px; }
+
+.AssetsList-item--medium {
+  width: 56px;
+  min-width: 56px;
+  height: 56px; }
+
+.Modal {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background: #F9F9F9; }
+
+.Modal-header {
+  border-bottom: 1px solid rgba(46, 60, 67, 0.08);
+  background: #FFF; }
+
+.Modal-container {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  padding: 32px 0 0;
+  overflow: hidden; }
+
+.Modal-container .ScrollView {
+  align-items: center;
+  margin-top: -32px;
+  margin-right: 0;
+  margin-left: 0; }
+
+.Modal-container--analysis .ScrollView {
+  padding-bottom: 274px; }
+
+.Modal-container--analysis .ScrollView-shadow--bottom {
+  bottom: 274px; }
+
+.Modal-footer,
+.Modal-header {
+  display: flex;
+  flex: 0 0 auto; }
+
+.Modal-footer {
+  border-top: 1px solid rgba(46, 60, 67, 0.08); }
+
+.Modal-footer.is-disabled {
+  display: none; }
+
+.Modal-navigation {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  margin-top: -33px;
+  padding-top: 1px;
+  border-bottom: 1px solid #DDD;
+  background: #FFF; }
+
+.Modal-container .ScrollView-wrapper {
+  width: 100%; }
+
+.Modal-inner .ScrollView-content,
+.Modal-navigationInner,
+.Modal-headerContainer,
+.Modal-footerContainer {
+  flex: 0 0 auto;
+  width: 940px;
+  margin: 0 auto; }
+
+.Modal-header {
+  padding: 24px 0; }
+
+.Modal-footerContainer {
+  padding: 24px 0 0; }
+
+.Dialog-contentWrapper--withBreadcrumbs .Modal-header {
+  padding-top: 0; }
+
+.Dialog-headerWrapper {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  width: 940px;
+  margin: 24px auto 0 auto; }
+
+.Dialog-contentWrapper.Dialog-contentWrapper--withHeaderWrapper .Modal-footerContainer {
+  margin-bottom: 70px; }
+
+.Modal-inner--with-navigation {
+  padding: 32px 0 0; }
+
+.Modal-inner .ScrollView-content {
+  margin-top: 5px; }
+
+.Modal-inner {
+  display: flex;
+  flex: 1;
+  overflow: hidden; }
+
+.Modal-inner--grid {
+  flex: 0 503px;
+  overflow: visible; }
+
+.Modal-inner--medium {
+  flex: 0 780px; }
+
+.Modal-inner--full {
+  flex: 0 944px; }
+
+.Modal-outer {
+  display: flex;
+  flex: 1;
+  overflow: hidden; }
+
+.Modal-basemapContainer {
+  flex-direction: column; }
+
+.Dialog-content--expanded {
+  height: 100vh; }
+
+.Tab-pane,
+.Tab-paneContent {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  width: 100%;
+  min-height: 0; }
+
+.Tab-paneLabelImageContainer {
+  min-width: 16px;
+  height: 16px; }
+
+.Tab-paneLabelImage {
+  width: auto;
+  height: 16px; }
+
+.Tab-paneContentInner {
+  display: flex;
+  flex: 1 1 auto; }
+
+.Modal-listActions {
+  margin-top: 32px; }
+
+.Modal-listActionsitem,
+.Modal-icon {
+  margin-right: 16px; }
+
+.Modal-listActionsitem:last-child {
+  margin-right: 0; }
+
+.Modal-icon {
+  margin-top: 6px;
+  line-height: 34px;
+  /* align-items: baseline doesnt work correctly in ff */ }
+
+.Modal-icon--svg {
+  width: 25px;
+  height: 25px; }
+
+.Modal-listTextItem {
+  margin-top: 32px; }
+
+.Modal-listTextHighlight {
+  display: inline-block;
+  padding: 4px 5px;
+  border-radius: 2px;
+  background: #F9F9F9; }
+  .Modal-listTextHighlight.is-code {
+    font: 500 12px 'Monaco', 'Monospace'; }
+
+.Modal-listForm {
+  margin-left: 24px; }
+
+.Modal-listFormItem {
+  margin-right: 32px; }
+  .Modal-listFormItem:last-child {
+    margin-right: 0; }
+  .Modal-listFormItem.is-disabled {
+    color: #CBCED0; }
+
+.Modal-addItem {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #DDD;
+  border-radius: 4px; }
+
+.Modal-titleBasemap {
+  margin: 24px 0; }
+
+/* animation analysis */
+.Analysis-animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 304px;
+  max-width: 100%;
+  height: 96px;
+  overflow: hidden;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background: #2E3C43; }
+  .Analysis-animation.is-rounded {
+    border-radius: 4px; }
+
+.Analysis-info {
+  padding: 16px; }
+
+.Analysis-link {
+  display: inline-flex;
+  font-weight: 600; }
+
+.ModalBlockList-item.is-disabled {
+  border: none;
+  opacity: 0.24;
+  pointer-events: none; }
+
+.ModalBlockList-item.is-disabled .Analysis-animation {
+  background-color: transparent;
+  filter: grayscale(100); }
+
+.ModalBlockList-item.is-disabled .u-actionTextColor {
+  display: none; }
+
+.ModalBlockList-item-body {
+  display: block; }
+
+.SubmenuModal {
+  margin-bottom: 32px;
+  padding-bottom: 24px; }
+
+.SubmenuModal-item::after {
+  content: '';
+  width: 3px;
+  height: 6px;
+  margin-left: 12px;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0iM3B4IiBoZWlnaHQ9IjZweCIgdmlld0JveD0iMCAwIDMgNiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgIDx0aXRsZT5MaW5lIENvcHkgOTwvdGl0bGU+ICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPiAgICA8ZGVmcz48L2RlZnM+ICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiPiAgICAgICAgPHBvbHlsaW5lIGlkPSJMaW5lLUNvcHktOSIgc3Ryb2tlPSIjQ0JDRUQwIiBzdHJva2Utd2lkdGg9IjEuMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS43NTAwMDAsIDMuMDAwMDAwKSByb3RhdGUoLTkwLjAwMDAwMCkgdHJhbnNsYXRlKC0xLjc1MDAwMCwgLTMuMDAwMDAwKSAiIHBvaW50cz0iLTAuMjQ5OTk5OTk2IDIuMjUgMS43NTAwMDAwMSAzLjI1IDMuNzUgMi4yNSI+PC9wb2x5bGluZT4gICAgPC9nPjwvc3ZnPg==); }
+
+.SubmenuModal-item:last-child::after {
+  display: none; }
+
+.ScrollView {
+  display: flex;
+  flex-direction: column;
+  margin-top: -19px; }
+  .ScrollView,
+  .ScrollView .ScrollView-wrapper {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    min-height: 0;
+    margin-right: -24px;
+    margin-left: -24px;
+    padding-right: 24px;
+    padding-left: 24px; }
+  .ScrollView .ScrollView-content {
+    flex: 1;
+    width: 100%;
+    max-width: 940px;
+    padding: 18px 0; }
+
+.ScrollView--with-navigation {
+  margin-top: 0; }
+
+.ScrollView--horizontal,
+.ScrollView--horizontal .ScrollView-wrapper {
+  margin: 0;
+  padding: 0; }
+
+.ScrollView--horizontal .ScrollView-content {
+  padding: 0 0 18px; }
+
+.ScrollView--withoutMargins,
+.ScrollView--withoutMargins .ScrollView-wrapper {
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0; }
+
+.ScrollView-shadow {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  transition: opacity 400ms;
+  opacity: 0;
+  pointer-events: none; }
+
+.ScrollView-shadow--top,
+.ScrollView-shadow--bottom {
+  right: -1px;
+  left: -1px;
+  height: 18px; }
+
+.ScrollView-shadow--top {
+  top: 0;
+  background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0) 88%); }
+
+.ScrollView-shadow--bottom {
+  bottom: 0;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0) 88%); }
+
+.ScrollView-shadow.is-visible {
+  opacity: 1; }
+
+
+/*# sourceMappingURL=organization.css.map*/

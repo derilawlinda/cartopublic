@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "show-hint.css",
+	"sources": [
+		"../../../../../../tmp/sass/vendor/show-hint.scss"
+	],
+	"sourcesContent": [
+		".CodeMirror-hints {\n  position: absolute;\n  z-index: 10;\n  overflow: hidden;\n  list-style: none;\n\n  margin: 0;\n  padding: 2px;\n\n  -webkit-box-shadow: 2px 3px 5px rgba(0,0,0,.2);\n  -moz-box-shadow: 2px 3px 5px rgba(0,0,0,.2);\n  box-shadow: 2px 3px 5px rgba(0,0,0,.2);\n  border-radius: 3px;\n  border: 1px solid silver;\n\n  background: white;\n  font-size: 90%;\n  font-family: monospace;\n\n  max-height: 20em;\n  overflow-y: auto;\n}\n\n.CodeMirror-hint {\n  border-radius: 2px;\n  color: black;\n  cursor: pointer;\n  margin: 0;\n  max-width: 19em;\n  overflow: hidden;\n  padding: 0 4px;\n  white-space: pre;\n}\n\n.CodeMirror-hint-active {\n  background: #08f;\n  color: white;\n}\n"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,iBAAiB,CAAC;EAChB,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,EAAE;EACX,QAAQ,EAAE,MAAM;EAChB,UAAU,EAAE,IAAI;EAEhB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,GAAG;EAEZ,kBAAkB,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,kBAAc;EAC9C,eAAe,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,kBAAc;EAC3C,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,kBAAc;EACtC,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,gBAAgB;EAExB,UAAU,EAAE,KAAK;EACjB,SAAS,EAAE,GAAG;EACd,WAAW,EAAE,SAAS;EAEtB,UAAU,EAAE,IAAI;EAChB,UAAU,EAAE,IAAI,GACjB;;AAED,AAAA,gBAAgB,CAAC;EACf,aAAa,EAAE,GAAG;EAClB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,OAAO;EACf,MAAM,EAAE,CAAC;EACT,SAAS,EAAE,IAAI;EACf,QAAQ,EAAE,MAAM;EAChB,OAAO,EAAE,KAAK;EACd,WAAW,EAAE,GAAG,GACjB;;AAED,AAAA,uBAAuB,CAAC;EACtB,UAAU,EAAE,IAAI;EAChB,KAAK,EAAE,KAAK,GACb"
+}

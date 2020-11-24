@@ -1,0 +1,1 @@
+.watching-notifier{position:fixed;z-index:100;right:0;bottom:-50px;padding:8px 10px;transform-style:linear;transition:bottom 250ms;border-top-left-radius:3px;background:#FF4D4D;color:white;font-size:13px}.watching-notifier.active{bottom:0}

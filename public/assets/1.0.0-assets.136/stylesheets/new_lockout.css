@@ -1,0 +1,231 @@
+.Dialog .Dialog-header {
+  box-sizing: content-box;
+}
+.Dialog .Dialog-header * {
+    box-sizing: content-box;
+}
+
+/* === COLORS === */
+/* Primary */
+/* Neutral */
+/* Accents */
+/* Theme */
+/* === TYPE === */
+/* === LAYOUT === */
+/* === COMPONENTS === */
+/* defaults */
+/* buttons */
+/* header */
+/* subheader */
+/* navbar */
+/* form */
+/* dropdowns */
+/* progressbar */
+/* cards */
+/* notification warning */
+/* === PAGES === */
+/* onboarding */
+/* Jupyter code blocks
+  Not our palette color, just copying jupyter look and feel */
+/* lockout */
+/* === Z_INDEX === */
+/* === DEPRECATED === */
+.page[data-v-c936b87a] {
+  position: relative;
+  min-height: calc(100vh - 392px);
+  padding: 64px 0 120px;
+  border-bottom: 1px solid #EBEEF5;
+}
+.page--welcome[data-v-c936b87a], .page--settings[data-v-c936b87a], .page--data[data-v-c936b87a] {
+    padding-top: 0;
+}
+.page.page__sticky-subheader[data-v-c936b87a] {
+  padding: 128px 0 120px;
+}
+
+/* === COLORS === */
+/* Primary */
+/* Neutral */
+/* Accents */
+/* Theme */
+/* === TYPE === */
+/* === LAYOUT === */
+/* === COMPONENTS === */
+/* defaults */
+/* buttons */
+/* header */
+/* subheader */
+/* navbar */
+/* form */
+/* dropdowns */
+/* progressbar */
+/* cards */
+/* notification warning */
+/* === PAGES === */
+/* onboarding */
+/* Jupyter code blocks
+  Not our palette color, just copying jupyter look and feel */
+/* lockout */
+/* === Z_INDEX === */
+/* === DEPRECATED === */
+.footer[data-v-c8990c62] {
+  padding-top: 64px;
+  padding-bottom: 100px;
+}
+@media (max-width: 600px) {
+.footer[data-v-c8990c62] {
+      flex-direction: column-reverse;
+}
+}
+.footer-block[data-v-c8990c62] {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 600px) {
+.footer-block[data-v-c8990c62] {
+      flex-direction: column-reverse;
+}
+}
+.footer-block .footer-link[data-v-c8990c62]:first-child {
+    padding-right: 42px;
+}
+.footer-link[data-v-c8990c62] {
+  display: block;
+  width: 50%;
+  margin-bottom: 48px;
+}
+@media (max-width: 600px) {
+.footer-link[data-v-c8990c62] {
+      width: unset;
+      margin-bottom: 36px;
+}
+}
+.footer-link[data-v-c8990c62]:hover {
+    text-decoration: none;
+}
+.footer-link:hover .title-link[data-v-c8990c62] {
+      color: #047AE6;
+}
+.footer-link:hover .chevron .chevron-path[data-v-c8990c62] {
+      fill: #047AE6;
+}
+.footer-link .chevron[data-v-c8990c62] {
+    display: inline-block;
+    margin-left: 8px;
+}
+.title-link[data-v-c8990c62] {
+  margin-bottom: 4px;
+  white-space: nowrap;
+}
+@media (max-width: 600px) {
+.footer-logo[data-v-c8990c62] {
+    display: flex;
+    justify-content: center;
+}
+}
+.carto-logo[data-v-c8990c62] {
+  width: 92px;
+}
+@media (max-width: 600px) {
+.carto-logo[data-v-c8990c62] {
+      width: 64px;
+      margin: 28px 0 16px;
+}
+}
+
+/* === COLORS === */
+/* Primary */
+/* Neutral */
+/* Accents */
+/* Theme */
+/* === TYPE === */
+/* === LAYOUT === */
+/* === COMPONENTS === */
+/* defaults */
+/* buttons */
+/* header */
+/* subheader */
+/* navbar */
+/* form */
+/* dropdowns */
+/* progressbar */
+/* cards */
+/* notification warning */
+/* === PAGES === */
+/* onboarding */
+/* Jupyter code blocks
+  Not our palette color, just copying jupyter look and feel */
+/* lockout */
+/* === Z_INDEX === */
+/* === DEPRECATED === */
+.upgrade-button[data-v-393be50c] {
+  margin-right: 64px;
+  background-color: #003267;
+}
+.link[data-v-393be50c] {
+  text-decoration: underline;
+}
+.warning-container[data-v-393be50c] {
+  text-align: center;
+}
+.warning-icon[data-v-393be50c] {
+  margin-bottom: 48px;
+}
+.warning-title[data-v-393be50c] {
+  margin-bottom: 16px;
+}
+.warning-description[data-v-393be50c] {
+  margin-bottom: 16px;
+}
+.buttons-container[data-v-393be50c] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 36px;
+}
+
+/* === COLORS === */
+/* Primary */
+/* Neutral */
+/* Accents */
+/* Theme */
+/* === TYPE === */
+/* === LAYOUT === */
+/* === COMPONENTS === */
+/* defaults */
+/* buttons */
+/* header */
+/* subheader */
+/* navbar */
+/* form */
+/* dropdowns */
+/* progressbar */
+/* cards */
+/* notification warning */
+/* === PAGES === */
+/* onboarding */
+/* Jupyter code blocks
+  Not our palette color, just copying jupyter look and feel */
+/* lockout */
+/* === Z_INDEX === */
+/* === DEPRECATED === */
+.dummy-header[data-v-faf5205e] {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 0 64px;
+  background-color: #047AE6;
+}
+@media (max-width: 800px) {
+.dummy-header[data-v-faf5205e] {
+      padding: 0 24px;
+}
+}
+@media (max-width: 600px) {
+.dummy-header[data-v-faf5205e] {
+      padding: 0 16px;
+}
+}
+
+
+/*# sourceMappingURL=new_lockout.css.map*/

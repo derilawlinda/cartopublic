@@ -1,0 +1,1 @@
+.Badge{display:block;position:absolute;top:-9px;right:-9px;width:17px;height:17px;border-radius:23px;background-color:#ccc;color:#FFF;font-size:12px;font-weight:500;line-height:17px;text-align:center}.Badge.is-icon{position:relative;top:auto;right:auto}.Badge--negative{background-color:#F15743}.Badge--positive{background-color:#8fb83f}.Badge--alert{background-color:#F19243}
